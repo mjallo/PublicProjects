@@ -1,0 +1,30 @@
+<%- include('partials/header') %>
+<div class="container mt-5">
+  <h1>Offer</h1>
+
+  <div class="row">
+    <div class="col-sm-8">
+      <div class="card">
+        <div class="card-body">
+
+          <!-- Makes POST request to /register route -->
+          <form action="/offer" method="POST">
+            <div class="form-group">
+              <label for="text">job-Name</label>
+              <input type="text" class="form-control" name="jobname">
+            </div>
+            <div class="form-group">
+              <label for="text">city</label>
+              <input type="text" class="form-control" name="city">
+            </div>
+            <button type="submit" class="btn btn-dark">Offer</button>
+          </form>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<%- include('partials/header') %>

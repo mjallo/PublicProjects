@@ -1,0 +1,21 @@
+<%- include('partials/header') %>
+
+
+<div class="jumbotron centered">
+  <div class="container">
+    <i class=""></i>
+    <h1 class="display-3">jobSearch</h1>
+    <p class="lead">start now the search, or use our form to offer a job</p>
+    <hr>
+    <a class="btn btn-light btn-lg" href="/search" role="button">Search</a>
+    <a class="btn btn-dark btn-lg" href="/offer" role="button">Offer</a>
+  </div>
+  <div class="container mt-4" style = "text-align: left;">
+    <h2>Offered jobs: </h2>
+    <% jobs.forEach(function(job){ %>
+      <p><%=job.jobname + ": " + job.city%></p>
+    <% }) %>
+  </div>
+</div>
+
+<%- include('partials/footer') %>
